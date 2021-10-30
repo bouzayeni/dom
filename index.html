@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>shopping cart</title>
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <i class="fas fa-shopping-cart"></i>
+        <nav>
+            
+            <h2> Shop</h2>
+
+        </nav>
+    </header>
+    <br>
+
+
+
+    <div class="container">
+        
+        <br>
+        <div class="image">
+            <img src="1.jpg" alt="trowsers">
+            <h3>article 1</h3>
+            <p class="card-text1">Price: 25 </p>
+            
+            <input id="demoInput1" type=number min=0 max=110>
+            <button onclick="increment('demoInput1')">+</button>
+            <button onclick="decrement('demoInput1')">-</button>
+            
+            <div id="main1">
+                <button class="btn-delete1" onclick='del1()' >X</button>
+            </div>
+            <button ><i class="fas fa-heart"></i></button>
+            
+        </div>
+
+
+
+
+        <div class="image">
+            <img src="2.jpg" alt="trowsers">
+            <h3>article 2</h3>
+            <p class="card-text2">Price: 44 </p>
+            
+            <input id="demoInput2" type=number min=0 max=110>
+            <button onclick="increment('demoInput2')">+</button>
+            <button onclick="decrement('demoInput2')">-</button>
+            <div id="main2">
+                <button class="btn-delete2" onclick='del2()' >X</button>
+            </div>
+            
+            <button ><i class="fas fa-heart"></i></button>
+            
+        </div>
+
+        <div class="image">
+            <img src="4.jpg" alt="t-shirts">
+            <h3>article 3</h3>
+            <p class="card-text3">Price: 15 </p>
+            
+            <input id="demoInput3" type=number min=0 max=110>
+            <button onclick="increment('demoInput3')">+</button>
+            <button onclick="decrement('demoInput3')">-</button>
+            <div id="main3">
+                <button class="btn-delete3" onclick='del3()' >X</button>
+            </div>
+            
+            
+                <button ><i class="fas fa-heart"></i></button>
+            
+        </div>
+       
+        <div class="image">
+            <img src="6.jpg" alt="shoes">
+            <h3>article 4</h3>
+            <p class=" ">Price: 70 </p>
+            
+            <input id="demoInput4" type=number min=0 max=110>
+            <button onclick="increment('demoInput4')">+</button>
+            <button onclick="decrement('demoInput4')">-</button>
+            <div id="main4">
+                <button class="btn-delete3" onclick='del4()'>X</button>
+            </div>
+            <button ><i class="fas fa-heart"></i></button>
+            
+        </div>
+        <br>
+        <h1 style="padding-top: 20px">Total_Price: <span id="total"></span></h1>
+        
+    </div>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
